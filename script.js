@@ -35,4 +35,11 @@ document.getElementById("addBookButton").addEventListener("click", () => {
     const author = document.getElementById("author").value;
     const genre = document.getElementById("genre").value;
     const pages = document.getElementById("pages").value;
+
+    if (title && author && genre) {
+        addBookToLibrary(title, author, genre, pages,);
+        document.getElementById("bookForm").reset();
+    } else {
+        alert("Please fill out required fields.");
+    }
 });
