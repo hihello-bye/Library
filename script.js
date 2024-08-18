@@ -22,10 +22,10 @@ function displayLibrary() {
     const libraryDiv = document.getElementById("library");
     libraryDiv.innerHTML ="";
 
-    library.forEach((book, index)) => {
+    library.forEach((book, index) => {
         const bookDiv = document.createElement("div");
         bookDiv.className = "book";
         bookDiv.textContent = `${index + 1}. ${book.printSummary()}`;
         libraryDiv.appendChild(bookDiv);
-     }
+     )}
 }
