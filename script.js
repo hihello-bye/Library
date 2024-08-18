@@ -9,3 +9,5 @@ class Book {
         return `${this.title} by ${this.author} Genre: ${this.genre} Number of pages: ${this.pages}`;
     }
 }
+
+const library = [];
