@@ -27,5 +27,5 @@ function displayLibrary() {
         bookDiv.className = "book";
         bookDiv.textContent = `${index + 1}. ${book.printSummary()}`;
         libraryDiv.appendChild(bookDiv);
-     )}
+     });
 }
