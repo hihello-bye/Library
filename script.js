@@ -71,3 +71,5 @@ document.getElementById("addBookButton").addEventListener("click", () => {
         alert("Please fill out required fields.");
     }
 });
+
+displaySuggestions();
