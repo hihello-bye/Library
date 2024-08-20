@@ -30,7 +30,7 @@ function displayLibrary() {
      });
 }
 
-document.getElementById("addBookButton").addEventListener("click", () => {
+document.getElementById("addBookButton")?.addEventListener("click", () => {
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
     const genre = document.getElementById("genre").value;
