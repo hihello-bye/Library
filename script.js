@@ -12,6 +12,13 @@ class Book {
 
 const library = [];
 
+const suggestions = [
+    new Book("Pride and Predjudice", "Jane Austin", "Regency", "328"),
+    new Book("The Adventures of Sherlock Holmes", "Arthur Conan Doyle", "Detective", "307"),
+    new Book("The Game Changer", "Lana Ferguson", "Romance", "400"),
+    new Book("The Unraveling", "Vi Keeland", "Thriller", "304"),
+]
+
 function addBookToLibrary(title, author, genre, pages) {
     const newBook = new Book(title, author, genre, pages);
     library.push(newBook);
