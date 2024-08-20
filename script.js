@@ -37,6 +37,27 @@ function displayLibrary() {
      });
 }
 
+function displaySuggestions() {
+    const suggestionsDiv = document.getElementById("suggestions");
+
+    suggestions.forEach((book, index) => {
+        const suggestionDiv = document.createElement("div");
+        suggestionDiv.className = "suggestion";
+        suggestionDiv.textContent = `${book.title} by ${book.author}`;
+        suggestionDiv.addEventListener("click", () => {
+            fillFormWithSuggestion(book);
+        })
+        suggestionsDiv.appendChild(suggestionDiv);
+    });
+}
+
+function fillFormWithSuggestio(book) {
+    document.getElementById("title").value = book.title;
+    document.getElementById("author").value = book.author;
+    document.getElementById("genre").value = book.genre;
+    document.getElementById("pages").value = book.pages;
+}
+
 document.getElementById("addBookButton").addEventListener("click", () => {
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
