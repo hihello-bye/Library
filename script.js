@@ -51,7 +51,7 @@ function displaySuggestions() {
     });
 }
 
-function fillFormWithSuggestio(book) {
+function fillFormWithSuggestion(book) {
     document.getElementById("title").value = book.title;
     document.getElementById("author").value = book.author;
     document.getElementById("genre").value = book.genre;
