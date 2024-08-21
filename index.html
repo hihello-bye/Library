@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Library</h1>
+    <div id="header">Library</div>
 
+    <div id="contentContainer">
+        <div id="mainImage">
+            <img src="img/mainImage.png" alt="Main Image">
+        </div>
+
+    <div id="mainContent">
+    <div id="icon">
+        <img src="img/bookIcon.png" alt="Icon">
+    </div>
     <button type="button" id="showFormButton">New Book</button>
 
     <form id="bookForm">
@@ -25,13 +34,17 @@
         <input type="number" id="pages">
         <button type="button" id="addBookButton">Add Book</button>
     </form>
+    </div>
 
     <h2>Suggestions</h2>
     <div id="suggestions"></div>
 
+    <div id="bookShelf">
     <h2>Book Shelf</h2>
     <div id="library"></div>
-
+     </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
