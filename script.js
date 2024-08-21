@@ -58,6 +58,11 @@ function fillFormWithSuggestion(book) {
     document.getElementById("pages").value = book.pages;
 }
 
+document.getElementById("showFormButton").addEventListener("click", () => {
+    const form = document.getElementById("bookForm");
+    form.style.display = form.style.display === "none" ? "block" : "none";
+})
+
 document.getElementById("addBookButton").addEventListener("click", () => {
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
@@ -67,6 +72,7 @@ document.getElementById("addBookButton").addEventListener("click", () => {
     if (title && author && genre) {
         addBookToLibrary(title, author, genre, pages,);
         document.getElementById("bookForm").reset();
+        document.getElementById("bookForm").styleDisplay = "none"
     } else {
         alert("Please fill out required fields.");
     }
