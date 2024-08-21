@@ -72,7 +72,7 @@ document.getElementById("addBookButton").addEventListener("click", () => {
     if (title && author && genre) {
         addBookToLibrary(title, author, genre, pages,);
         document.getElementById("bookForm").reset();
-        document.getElementById("bookForm").styleDisplay = "none"
+        document.getElementById("bookForm").style.display = "none";
     } else {
         alert("Please fill out required fields.");
     }
