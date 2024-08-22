@@ -58,9 +58,13 @@ function fillFormWithSuggestion(book) {
     document.getElementById("pages").value = book.pages;
 }
 
-document.getElementById("showFormButton").addEventListener("click", () => {
+document.getElementById("showFormButton").addEventListener("click", function() {
     const form = document.getElementById("bookForm");
-    form.style.display = form.style.display === "none" ? "block" : "none";
+    if(form.style.display === "none" || form.style.display === "") {
+        form.style.display = "flex";
+    } else {
+        form.style.display = "none";
+    }
 })
 
 document.getElementById("addBookButton").addEventListener("click", () => {

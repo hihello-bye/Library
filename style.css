@@ -58,7 +58,6 @@ body {
 
 #bookForm {
     display: none;
-    display: flex;
     flex-direction: column;
     gap: 2.5px;
     padding: 10px;
