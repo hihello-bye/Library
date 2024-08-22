@@ -25,6 +25,8 @@ body {
 #mainImage {
     flex: 1;
     height: 40%;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 #mainImage img {
