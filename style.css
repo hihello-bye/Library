@@ -84,13 +84,16 @@ body {
 
 #suggestionsContainer {
     position: absolute; bottom: 0;
-    display: flex;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px;
 
+}
+
+#suggestionsContainer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 #suggestions {
@@ -98,4 +101,5 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 10px;
 }
