@@ -22,19 +22,6 @@ body {
     height: calc(100vh - 160px);
 }
 
-#mainImage {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#mainImage img {
-    width: 45%;
-    height: auto;
-    object-fit: cover;
-}
-
 #mainContent {
     display: flex;
     flex: 1;
