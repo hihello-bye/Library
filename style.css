@@ -50,6 +50,10 @@ body {
     padding: 10px;
 }
 
+.book {
+    margin-bottom: 10px;
+}
+
 #icon img {
     max-width: 100px;
    margin-bottom: 20px;
