@@ -55,7 +55,7 @@ body {
    margin-bottom: 20px;
 }
 
-#showFormButton {
+#showFormButton, #addBookButton {
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -71,10 +71,6 @@ body {
     gap: 10px;
     width: 100%;
     max-width: 400px;
-}
-
-#addBookButton {
-    padding: 10px;
 }
 
 #bookShelf {
