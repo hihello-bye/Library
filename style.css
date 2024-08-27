@@ -43,6 +43,13 @@ body {
     gap: 10px;
 }
 
+.suggestion {
+    background-color: #fbcfe8;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
 #icon img {
     max-width: 100px;
    margin-bottom: 20px;
