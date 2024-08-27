@@ -46,6 +46,7 @@ function displaySuggestions() {
         suggestionDiv.textContent = `${book.title} by ${book.author}`;
         suggestionDiv.addEventListener("click", () => {
             fillFormWithSuggestion(book);
+            bookForm.style.display = "flex";
         })
         suggestionsDiv.appendChild(suggestionDiv);
     });
